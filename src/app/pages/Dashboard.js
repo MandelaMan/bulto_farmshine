@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 // import { Line, Doughnut, Bar, Radar } from 'react-chartjs-2';
-import { Line, Bar, Radar } from "react-chartjs-2";
+import { Line, Bar } from "react-chartjs-2";
 
-import { ProgressBar, Dropdown } from "react-bootstrap";
-import GaugeChart from "react-gauge-chart";
-import { VectorMap } from "react-jvectormap";
+import { Dropdown } from "react-bootstrap";
+// import GaugeChart from "react-gauge-chart";
+// import { VectorMap } from "react-jvectormap";
 
-const mapData = {
-  CN: 100000,
-  IN: 9900,
-  SA: 86,
-  EG: 70,
-  SE: 0,
-  FI: 0,
-  FR: 0,
-  US: 20,
-};
+// const mapData = {
+//   CN: 100000,
+//   IN: 9900,
+//   SA: 86,
+//   EG: 70,
+//   SE: 0,
+//   FI: 0,
+//   FR: 0,
+//   US: 20,
+// };
 
 // import DatePicker from 'react-datepicker';
 // import { Dropdown } from 'react-bootstrap';
@@ -1039,27 +1039,27 @@ export class Dashboard extends Component {
         },
       ],
     };
-    const totaltransactionData = {
-      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-      datasets: [
-        {
-          label: "Sessions",
-          data: [320, 280, 300, 280, 300, 270, 350],
-          backgroundColor: gradientBar7,
-          borderColor: "#fa394e",
-          borderWidth: 0,
-          pointBackgroundColor: "#fa394e",
-          pointRadius: 7,
-          pointBorderWidth: 3,
-          pointBorderColor: "#fff",
-          pointHoverRadius: 7,
-          pointHoverBackgroundColor: "#fa394e",
-          pointHoverBorderColor: "#fa394e",
-          pointHoverBorderWidth: 2,
-          pointHitRadius: 7,
-        },
-      ],
-    };
+    // const totaltransactionData = {
+    //   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    //   datasets: [
+    //     {
+    //       label: "Sessions",
+    //       data: [320, 280, 300, 280, 300, 270, 350],
+    //       backgroundColor: gradientBar7,
+    //       borderColor: "#fa394e",
+    //       borderWidth: 0,
+    //       pointBackgroundColor: "#fa394e",
+    //       pointRadius: 7,
+    //       pointBorderWidth: 3,
+    //       pointBorderColor: "#fff",
+    //       pointHoverRadius: 7,
+    //       pointHoverBackgroundColor: "#fa394e",
+    //       pointHoverBorderColor: "#fa394e",
+    //       pointHoverBorderWidth: 2,
+    //       pointHitRadius: 7,
+    //     },
+    //   ],
+    // };
     this.setState({
       visitChartData: visitData,
       impressionChartData: impressionData,

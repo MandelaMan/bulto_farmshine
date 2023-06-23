@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Line, Bar, Doughnut, Pie, Scatter } from "react-chartjs-2";
+import { Bar, Pie } from "react-chartjs-2";
 
 export class FarmerSummary extends Component {
   age_group_data = {
