@@ -59,7 +59,7 @@ export class Agents extends Component {
                               alt="user icon"
                             />
                           </td>
-                          <td> Jackson Mwatela </td>
+                          <td>Jackson Mwatela</td>
                           <td>+254742044215</td>
                           <td> 13 </td>
                           <td> -</td>
