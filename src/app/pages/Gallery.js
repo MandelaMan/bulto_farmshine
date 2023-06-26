@@ -12,7 +12,7 @@ const farmer_2 =
 const images = [
   {
     src: farmer_1,
-    width: 430,
+    width: 380,
     height: 210,
     tags: [
       // { value: "Ocean", title: "Ocean" },
@@ -32,8 +32,8 @@ const images = [
   },
   {
     src: farmer_1,
-    width: 320,
-    height: 212,
+    width: 380,
+    height: 210,
     tags: [
       // { value: "Ocean", title: "Ocean" },
       // { value: "People", title: "People" },
@@ -42,8 +42,8 @@ const images = [
   },
   {
     src: farmer_1,
-    width: 320,
-    height: 212,
+    width: 380,
+    height: 210,
     tags: [
       // { value: "Ocean", title: "Ocean" },
       // { value: "People", title: "People" },
@@ -52,8 +52,8 @@ const images = [
   },
   {
     src: farmer_1,
-    width: 320,
-    height: 212,
+    width: 380,
+    height: 210,
     tags: [
       // { value: "Ocean", title: "Ocean" },
       // { value: "People", title: "People" },
@@ -72,8 +72,8 @@ const images = [
   },
   {
     src: farmer_1,
-    width: 320,
-    height: 212,
+    width: 380,
+    height: 210,
     tags: [
       // { value: "Ocean", title: "Ocean" },
       // { value: "People", title: "People" },
@@ -92,8 +92,8 @@ const images = [
   },
   {
     src: farmer_1,
-    width: 320,
-    height: 212,
+    width: 380,
+    height: 210,
     tags: [
       // { value: "Ocean", title: "Ocean" },
       // { value: "People", title: "People" },
