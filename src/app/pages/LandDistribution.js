@@ -32,6 +32,9 @@ export class LandDistribution extends Component {
             </div>
           </div>
         </div>
+        <div className="row">
+          <div className="col-12"></div>
+        </div>
       </div>
     );
   }
