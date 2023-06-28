@@ -234,7 +234,7 @@ class Sidebar extends Component {
             </Link>
           </li>
 
-          <li
+          {/* <li
             className={
               this.isPathActive("/accounting") ? "nav-item active" : "nav-item"
             }
@@ -270,7 +270,7 @@ class Sidebar extends Component {
                 </li>
               </ul>
             </Collapse>
-          </li>
+          </li> */}
           <li
             className={
               this.isPathActive("/reports") ? "nav-item active" : "nav-item"
