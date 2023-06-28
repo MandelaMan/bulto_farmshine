@@ -1458,7 +1458,7 @@ export class Dashboard extends Component {
           <div className="col-md-6 grid-margin stretch-card">
             <div className="card">
               <div className="card-body">
-                <h4 className="card-title">Farmer Distribution by Age Group</h4>
+                <h4 className="card-title">Crop Harvest</h4>
                 <Bar data={this.age_group_data} options={this.options} />
               </div>
             </div>
