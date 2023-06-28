@@ -524,136 +524,138 @@ export class Dashboard extends Component {
       display: false,
     },
   };
-  totalRevenueData = {
-    labels: [
-      "Day01",
-      "Day02",
-      "Day03",
-      "Day04",
-      "Day05",
-      "Day06",
-      "Day07",
-      "Day08",
-      "Day09",
-      "Day10",
-      "Day11",
-      "Day12",
-      "Day13",
-      "Day14",
-      "Day15",
-      "Day16",
-      "Day17",
-      "Day18",
-      "Day19",
-      "Day20",
-      "Day21",
-      "Day22",
-      "Day23",
-      "Day24",
-      "Day25",
-      "Day26",
-      "Day27",
-      "Day28",
-      "Day29",
-      "Day30",
-      "Day31",
-      "Day32",
-      "Day33",
-      "Day34",
-      "Day35",
-      "Day36",
-      "Day37",
-      "Day38",
-      "Day39",
-      "Day40",
-      "Day41",
-      "Day42",
-      "Day43",
-      "Day44",
-      "Day45",
-      "Day46",
-      "Day47",
-      "Day48",
-      "Day49",
-      "Day50",
-      "Day51",
-      "Day52",
-      "Day53",
-      "Day54",
-      "Day55",
-      "Day56",
-      "Day57",
-      "Day58",
-      "Day59",
-      "Day60",
-      "Day61",
-      "Day62",
-      "Day63",
-      "Day64",
-      "Day65",
-      "Day66",
-      "Day67",
-      "Day68",
-      "Day69",
-      "Day70",
-      "Day71",
-      "Day72",
-      "Day73",
-      "Day74",
-      "Day75",
-      "Day76",
-      "Day77",
-      "Day78",
-      "Day79",
-      "Day80",
-      "Day81",
-      "Day82",
-    ],
-    datasets: [
-      {
-        label: "Total Revenue",
-        data: [
-          56, 55, 59, 59, 59, 57, 56, 57, 54, 56, 58, 57, 59, 58, 59, 57, 55,
-          56, 54, 52, 49, 48, 50, 50, 46, 45, 49, 50, 52, 53, 52, 55, 54, 53,
-          56, 55, 56, 55, 54, 55, 57, 58, 56, 55, 56, 57, 58, 59, 58, 57, 55,
-          53, 52, 55, 57, 55, 54, 52, 55, 57, 56, 57, 58, 59, 58, 59, 57, 56,
-          55, 57, 58, 59, 60, 62, 60, 59, 58, 57, 56, 57, 56, 58, 59,
-        ],
-        borderColor: "#9B86F1",
-        backgroundColor: "rgba(255,255,255,0.2)",
-        borderWidth: 3,
-        fill: "origin",
-      },
-    ],
-  };
-  totalRevenueOptions = {
-    responsive: true,
-    maintainAspectRatio: true,
-    scales: {
-      yAxes: [
-        {
-          display: false,
-        },
-      ],
-      xAxes: [
-        {
-          display: false,
-        },
-      ],
-    },
-    legend: {
-      display: false,
-    },
-    elements: {
-      point: {
-        radius: 0,
-      },
-      line: {
-        tension: 0,
-      },
-    },
-    stepsize: 100,
-  };
+
+  // totalRevenueData = {
+  //   labels: [
+  //     "Day01",
+  //     "Day02",
+  //     "Day03",
+  //     "Day04",
+  //     "Day05",
+  //     "Day06",
+  //     "Day07",
+  //     "Day08",
+  //     "Day09",
+  //     "Day10",
+  //     "Day11",
+  //     "Day12",
+  //     "Day13",
+  //     "Day14",
+  //     "Day15",
+  //     "Day16",
+  //     "Day17",
+  //     "Day18",
+  //     "Day19",
+  //     "Day20",
+  //     "Day21",
+  //     "Day22",
+  //     "Day23",
+  //     "Day24",
+  //     "Day25",
+  //     "Day26",
+  //     "Day27",
+  //     "Day28",
+  //     "Day29",
+  //     "Day30",
+  //     "Day31",
+  //     "Day32",
+  //     "Day33",
+  //     "Day34",
+  //     "Day35",
+  //     "Day36",
+  //     "Day37",
+  //     "Day38",
+  //     "Day39",
+  //     "Day40",
+  //     "Day41",
+  //     "Day42",
+  //     "Day43",
+  //     "Day44",
+  //     "Day45",
+  //     "Day46",
+  //     "Day47",
+  //     "Day48",
+  //     "Day49",
+  //     "Day50",
+  //     "Day51",
+  //     "Day52",
+  //     "Day53",
+  //     "Day54",
+  //     "Day55",
+  //     "Day56",
+  //     "Day57",
+  //     "Day58",
+  //     "Day59",
+  //     "Day60",
+  //     "Day61",
+  //     "Day62",
+  //     "Day63",
+  //     "Day64",
+  //     "Day65",
+  //     "Day66",
+  //     "Day67",
+  //     "Day68",
+  //     "Day69",
+  //     "Day70",
+  //     "Day71",
+  //     "Day72",
+  //     "Day73",
+  //     "Day74",
+  //     "Day75",
+  //     "Day76",
+  //     "Day77",
+  //     "Day78",
+  //     "Day79",
+  //     "Day80",
+  //     "Day81",
+  //     "Day82",
+  //   ],
+  //   datasets: [
+  //     {
+  //       label: "Total Revenue",
+  //       data: [
+  //         56, 55, 59, 59, 59, 57, 56, 57, 54, 56, 58, 57, 59, 58, 59, 57, 55,
+  //         56, 54, 52, 49, 48, 50, 50, 46, 45, 49, 50, 52, 53, 52, 55, 54, 53,
+  //         56, 55, 56, 55, 54, 55, 57, 58, 56, 55, 56, 57, 58, 59, 58, 57, 55,
+  //         53, 52, 55, 57, 55, 54, 52, 55, 57, 56, 57, 58, 59, 58, 59, 57, 56,
+  //         55, 57, 58, 59, 60, 62, 60, 59, 58, 57, 56, 57, 56, 58, 59,
+  //       ],
+  //       borderColor: "#9B86F1",
+  //       backgroundColor: "rgba(255,255,255,0.2)",
+  //       borderWidth: 3,
+  //       fill: "origin",
+  //     },
+  //   ],
+  // };
+
+  // totalRevenueOptions = {
+  //   responsive: true,
+  //   maintainAspectRatio: true,
+  //   scales: {
+  //     yAxes: [
+  //       {
+  //         display: false,
+  //       },
+  //     ],
+  //     xAxes: [
+  //       {
+  //         display: false,
+  //       },
+  //     ],
+  //   },
+  //   legend: {
+  //     display: false,
+  //   },
+  //   elements: {
+  //     point: {
+  //       radius: 0,
+  //     },
+  //     line: {
+  //       tension: 0,
+  //     },
+  //   },
+  //   stepsize: 100,
+  // };
 
   realTimeStatisticsData = {
     labels: [
@@ -735,33 +737,47 @@ export class Dashboard extends Component {
   };
 
   marketingOverviewData = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    labels: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sept",
+      "Oct",
+      "Nov",
+      "Dec",
+    ],
     datasets: [
       {
         label: "OVERDUE",
-        data: [145, 238, 148, 293, 242, 235, 256, 334],
-        backgroundColor: "#826af9",
-        borderColor: "#826af9",
-        borderWidth: 0,
-      },
-      {
-        label: "SNOOZED",
-        data: [330, 380, 230, 400, 309, 430, 340, 310],
-        borderColor: "#9e86ff",
+        data: [145, 238, 148, 293, 242, 235, 256, 334, 238, 148, 293, 242],
+        backgroundColor: "#4f2c1d",
+        borderColor: "#4f2c1d",
         borderWidth: 0,
       },
       {
         label: "COMPLETED",
-        data: [375, 440, 284, 450, 386, 480, 400, 365],
-        backgroundColor: "#d0aeff",
-        borderColor: "#d0aeff",
+        data: [375, 440, 284, 450, 386, 480, 400, 365, 238, 148, 293, 242],
+        backgroundColor: "#74412b",
+        borderColor: "#74412b",
+        borderWidth: 0,
+      },
+      {
+        label: "SNOOZED",
+        data: [330, 380, 230, 400, 309, 430, 340, 310, 238, 148, 293, 242],
+        backgroundColor: "#874b32",
+        borderColor: "#874b32",
         borderWidth: 0,
       },
       {
         label: "PENDING",
-        data: [425, 480, 324, 490, 426, 520, 440, 405],
-        backgroundColor: "#f7d2ff",
-        borderColor: "#f7d2ff",
+        data: [425, 480, 324, 490, 426, 520, 440, 210, 430, 788, 67, 100],
+        backgroundColor: "#bc6b4a",
+        borderColor: "#bc6b4a",
         borderWidth: 0,
       },
     ],
@@ -854,12 +870,12 @@ export class Dashboard extends Component {
     gradientBar6.addColorStop(1, "rgba(255, 255, 255, 0.01)");
     gradientBar6.addColorStop(0, "#14c671");
 
-    var ctx7 = document
-      .getElementById("totaltransactionChart")
-      .getContext("2d");
-    var gradientBar7 = ctx7.createLinearGradient(0, 100, 200, 0);
-    gradientBar7.addColorStop(1, "#fa3252");
-    gradientBar7.addColorStop(0, "#fa5539");
+    // var ctx7 = document
+    //   .getElementById("totaltransactionChart")
+    //   .getContext("2d");
+    // var gradientBar7 = ctx7.createLinearGradient(0, 100, 200, 0);
+    // gradientBar7.addColorStop(1, "#fa3252");
+    // gradientBar7.addColorStop(0, "#fa5539");
 
     const visitData = {
       labels: [
@@ -1450,25 +1466,9 @@ export class Dashboard extends Component {
             </div> */}
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-md-8">
             <div className="row">
-              <div className="col-xl-6 col-lg-12 grid-margin stretch-card">
-                <div className="card">
-                  <div className="card-body pb-0">
-                    <div className="d-flex justify-content-between">
-                      <h4 className="card-title mb-0">Total Revenue</h4>
-                      <p className="font-weight-semibold mb-0">+1.37%</p>
-                    </div>
-                    <h3 className="font-weight-medium mb-4">184.42K</h3>
-                  </div>
-                  <Line
-                    data={this.totalRevenueData}
-                    options={this.totalRevenueOptions}
-                    height={75}
-                  />
-                </div>
-              </div>
               <div className="col-xl-6 col-lg-12 grid-margin stretch-card">
                 <div className="card">
                   <Line
@@ -1481,7 +1481,7 @@ export class Dashboard extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
