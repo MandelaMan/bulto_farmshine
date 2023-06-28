@@ -21,6 +21,20 @@ import { Dropdown } from "react-bootstrap";
 // import { Dropdown } from 'react-bootstrap';
 
 export class Dashboard extends Component {
+  age_group_data = {
+    labels: ["01/23 - 07/23", "01/22 - 12/22"],
+    datasets: [
+      {
+        label: "Crop Harvest",
+        data: [15, 19, 26],
+        backgroundColor: ["rgba(98, 54, 36, 1)", "rgba(188, 107, 74, 1)"],
+        borderColor: ["rgba(98, 54, 36 , 1)", "rgba(188, 107, 74, 1)"],
+        borderWidth: 1,
+        fill: false,
+      },
+    ],
+  };
+
   constructor(props) {
     super(props);
     this.state = {
@@ -1287,7 +1301,6 @@ export class Dashboard extends Component {
             </div>
           </div>
         </div>
-
         <div className="row">
           <div className="col-md-12 grid-margin">
             <div className="card">
@@ -1336,6 +1349,8 @@ export class Dashboard extends Component {
               </div>
             </div>
           </div>
+        </div>
+        <div className="row">
           <div className="col-md-6 grid-margin stretch-card">
             <div className="card">
               <div className="card-body">
@@ -1440,48 +1455,15 @@ export class Dashboard extends Component {
               </div>
             </div>
           </div>
-          <div className="col-md-4 grid-margin stretch-card">
-            {/* <div className="card">
-              <div className="card-body d-flex flex-column">
-                <div className="wrapper">
-                  <h4 className="card-title mb-0">Net Profit Margin</h4>
-                  <p>Started collecting data from February 2019</p>
-                  <div className="mb-4 rounded-legend" id="net-profit-legend">
-                    <ul>
-                      <li>
-                        <span className="bg-success"></span>Sales
-                      </li>
-                      <li>
-                        <span className="bg-info"></span>Orders
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <Radar
-                  data={this.state.netProfitChartData}
-                  options={this.state.netProfitOptions}
-                  height={280}
-                />
-              </div>
-            </div> */}
-          </div>
-        </div>
-        {/* <div className="row">
-          <div className="col-md-8">
-            <div className="row">
-              <div className="col-xl-6 col-lg-12 grid-margin stretch-card">
-                <div className="card">
-                  <Line
-                    data={this.state.totaltransactionChartData}
-                    options={this.state.totaltransactionChartOptions}
-                    height={75}
-                    id="totaltransactionChart"
-                  />
-                </div>
+          <div className="col-md-6 grid-margin stretch-card">
+            <div className="card">
+              <div className="card-body">
+                <h4 className="card-title">Farmer Distribution by Age Group</h4>
+                <Bar data={this.age_group_data} options={this.options} />
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     );
   }
