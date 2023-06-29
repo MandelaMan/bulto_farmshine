@@ -159,7 +159,7 @@ export class TheGallery extends Component {
                       variant="btn btn-secondary dropdown-toggle"
                       id="dropdownMenuButton1"
                     >
-                      All images
+                      By Album
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                       <Dropdown.Item>Farmers</Dropdown.Item>

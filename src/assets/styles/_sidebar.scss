@@ -277,22 +277,22 @@
       > .nav-link {
         position: relative;
 
-        &:before {
-          content: "";
-          position: absolute;
-          left: 30px;
-          right: 50%;
-          width: 10px;
-          height: 10px;
-          border-radius: 100%;
-          border: 2px solid $sidebar-nav-item-dot-color;
-          display: block;
+        // &:before {
+        //   content: "";
+        //   position: absolute;
+        //   left: 30px;
+        //   right: 50%;
+        //   width: 10px;
+        //   height: 10px;
+        //   border-radius: 100%;
+        //   border: 2px solid $sidebar-nav-item-dot-color;
+        //   display: block;
 
-          .rtl & {
-            left: auto;
-            right: 45px;
-          }
-        }
+        //   .rtl & {
+        //     left: auto;
+        //     right: 45px;
+        //   }
+        // }
       }
     }
 

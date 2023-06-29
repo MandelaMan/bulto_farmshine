@@ -4,6 +4,11 @@ import { Collapse } from "react-bootstrap";
 import { Dropdown } from "react-bootstrap";
 import { Trans } from "react-i18next";
 import { TfiDashboard } from "react-icons/tfi";
+import { LiaFileContractSolid } from "react-icons/lia";
+import { GiFarmer } from "react-icons/gi";
+import { ImUserTie } from "react-icons/im";
+import { HiOutlineDocumentReport } from "react-icons/hi";
+import { TfiGallery } from "react-icons/tfi";
 
 class Sidebar extends Component {
   state = {};
@@ -90,7 +95,10 @@ class Sidebar extends Component {
               <i className="mdi mdi-crosshairs-gps menu-icon"></i>
               &nbsp;
               <span className="menu-title">
-                <Trans>Dashboard</Trans>
+                <Trans>
+                  <TfiDashboard size={21} style={{ marginTop: "-3%" }} />
+                  &nbsp; &nbsp;Dashboard
+                </Trans>
               </span>
               <i className="menu-arrow"></i>
             </div>
@@ -131,7 +139,13 @@ class Sidebar extends Component {
             <Link className="nav-link" to="/contracts">
               <i className="mdi mdi-television menu-icon"></i>
               <span className="menu-title">
-                <Trans>Contracts</Trans>
+                <Trans>
+                  <LiaFileContractSolid
+                    size={22}
+                    style={{ marginTop: "-5%" }}
+                  />
+                  &nbsp;&nbsp;Contracts
+                </Trans>
               </span>
             </Link>
           </li>
@@ -143,7 +157,10 @@ class Sidebar extends Component {
             <Link className="nav-link" to="/farmers">
               <i className="mdi mdi-television menu-icon"></i>
               <span className="menu-title">
-                <Trans>Farmers</Trans>
+                <Trans>
+                  <GiFarmer size={22} style={{ marginTop: "-5%" }} />
+                  &nbsp;&nbsp;Farmers
+                </Trans>
               </span>
             </Link>
           </li>
@@ -155,7 +172,10 @@ class Sidebar extends Component {
             <Link className="nav-link" to="/agents">
               <i className="mdi mdi-television menu-icon"></i>
               <span className="menu-title">
-                <Trans>Agents</Trans>
+                <Trans>
+                  <ImUserTie size={20} style={{ marginTop: "-5%" }} />
+                  &nbsp;&nbsp;Agents
+                </Trans>
               </span>
             </Link>
           </li>
@@ -167,7 +187,10 @@ class Sidebar extends Component {
             <Link className="nav-link" to="/gallery">
               <i className="mdi mdi-television menu-icon"></i>
               <span className="menu-title">
-                <Trans>Gallery</Trans>
+                <Trans>
+                  <TfiGallery size={20} style={{ marginTop: "-5%" }} />
+                  &nbsp;&nbsp;Gallery
+                </Trans>
               </span>
             </Link>
           </li>
@@ -225,7 +248,13 @@ class Sidebar extends Component {
             >
               <i className="mdi mdi-crosshairs-gps menu-icon"></i>
               <span className="menu-title">
-                <Trans>Reports</Trans>
+                <Trans>
+                  <HiOutlineDocumentReport
+                    size={22}
+                    style={{ marginTop: "-5%" }}
+                  />
+                  &nbsp;&nbsp;Reports
+                </Trans>
               </span>
               <i className="menu-arrow"></i>
             </div>
