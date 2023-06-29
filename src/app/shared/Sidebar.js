@@ -3,6 +3,7 @@ import { Link, withRouter } from "react-router-dom";
 import { Collapse } from "react-bootstrap";
 import { Dropdown } from "react-bootstrap";
 import { Trans } from "react-i18next";
+import { TfiDashboard } from "react-icons/tfi";
 
 class Sidebar extends Component {
   state = {};
@@ -71,71 +72,7 @@ class Sidebar extends Component {
           </a>
         </div>
         <ul className="nav">
-          <li className="nav-item nav-profile not-navigation-link">
-            <div className="nav-link">
-              <Dropdown>
-                <Dropdown.Toggle className="nav-link user-switch-dropdown-toggler p-0 toggle-arrow-hide bg-transparent border-0 w-100">
-                  <div className="d-flex justify-content-between align-items-start">
-                    <div className="profile-image">
-                      <img
-                        className="img-xs rounded-circle"
-                        src={require("../../assets/images/faces/face8.jpg")}
-                        alt="profile"
-                      />
-                      <div className="dot-indicator bg-success"></div>
-                    </div>
-                    <div className="text-wrapper">
-                      <p className="profile-name">Elijah Mwangi</p>
-                      <p className="designation">Administrator</p>
-                    </div>
-                  </div>
-                </Dropdown.Toggle>
-                <Dropdown.Menu className="preview-list navbar-dropdown">
-                  <Dropdown.Item
-                    className="dropdown-item p-0 preview-item d-flex align-items-center"
-                    href="!#"
-                    onClick={(evt) => evt.preventDefault()}
-                  >
-                    <div className="d-flex">
-                      <div className="py-3 px-4 d-flex align-items-center justify-content-center">
-                        <i className="mdi mdi-bookmark-plus-outline mr-0"></i>
-                      </div>
-                      <div className="py-3 px-4 d-flex align-items-center justify-content-center border-left border-right">
-                        <i className="mdi mdi-account-outline mr-0"></i>
-                      </div>
-                      <div className="py-3 px-4 d-flex align-items-center justify-content-center">
-                        <i className="mdi mdi-alarm-check mr-0"></i>
-                      </div>
-                    </div>
-                  </Dropdown.Item>
-                  <Dropdown.Item
-                    className="dropdown-item preview-item d-flex align-items-center text-small"
-                    onClick={(evt) => evt.preventDefault()}
-                  >
-                    <Trans>Manage Accounts</Trans>
-                  </Dropdown.Item>
-                  <Dropdown.Item
-                    className="dropdown-item preview-item d-flex align-items-center text-small"
-                    onClick={(evt) => evt.preventDefault()}
-                  >
-                    <Trans>Change Password</Trans>
-                  </Dropdown.Item>
-                  <Dropdown.Item
-                    className="dropdown-item preview-item d-flex align-items-center text-small"
-                    onClick={(evt) => evt.preventDefault()}
-                  >
-                    <Trans>Check Inbox</Trans>
-                  </Dropdown.Item>
-                  <Dropdown.Item
-                    className="dropdown-item preview-item d-flex align-items-center text-small"
-                    onClick={(evt) => evt.preventDefault()}
-                  >
-                    <Trans>Sign Out</Trans>
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </div>
-          </li>
+          <li className="nav-item nav-profile not-navigation-link"></li>
           <li
             className={
               this.isPathActive("/dashboard") ? "nav-item active" : "nav-item"
@@ -151,6 +88,7 @@ class Sidebar extends Component {
               data-toggle="collapse"
             >
               <i className="mdi mdi-crosshairs-gps menu-icon"></i>
+              &nbsp;
               <span className="menu-title">
                 <Trans>Dashboard</Trans>
               </span>

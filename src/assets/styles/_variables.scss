@@ -104,11 +104,11 @@ $sidebar-width-mini: 185px;
 $sidebar-width-icon: 70px;
 
 $sidebar-light-bg: #fff;
-$sidebar-light-menu-color: #fff;
+$sidebar-light-menu-color: #4f2c1d;
 $sidebar-light-submenu-color: $sidebar-light-menu-color;
 // $sidebar-light-menu-active-bg: #0f25d5;
-$sidebar-light-menu-active-bg: #eeb313;
-$sidebar-light-menu-active-color: #fff;
+$sidebar-light-menu-active-bg: #f3f3f3;
+$sidebar-light-menu-active-color: #eeb313;
 $sidebar-light-menu-hover-bg: $sidebar-light-menu-active-bg;
 $sidebar-light-menu-hover-color: $sidebar-light-menu-color;
 $sidebar-light-submenu-hover-bg: initial;
@@ -121,10 +121,10 @@ $sidebar-light-category-color: #999999;
 $sidebar-light-profile-name-color: #404852;
 $sidebar-light-profile-title-color: #8d9498;
 
-// $sidebar-gradient-color-1: #5768f3;
-// $sidebar-gradient-color-2: #1c45ef;
-$sidebar-gradient-color-1: #4f2c1d;
-$sidebar-gradient-color-2: #4f2c1d;
+$sidebar-gradient-color-1: #ffffff;
+$sidebar-gradient-color-2: #ffffff;
+// $sidebar-gradient-color-1: #4f2c1d;
+// $sidebar-gradient-color-2: #4f2c1d;
 $sidebar-gradient: linear-gradient(
   to top,
   $sidebar-gradient-color-1,
