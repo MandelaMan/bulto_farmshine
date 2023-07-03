@@ -101,7 +101,6 @@ const Agents = () => {
         <div className="col-lg-12 grid-margin stretch-card">
           <div className="card">
             <div className="card-body">
-              <h4 className="card-title">Agent List</h4>
               <div className="table-responsive">
                 <table className="table table-striped">
                   <thead>
@@ -141,7 +140,10 @@ const Agents = () => {
                   </thead>
                   <tbody>
                     {table.getRowModel().rows.map((row) => (
-                      <tr key={row.id}>
+                      <tr
+                        key={row.id}
+                        onClick={() => console.log("redirect to page")}
+                      >
                         <td className="py-1">
                           <img
                             src={require("../../assets/images/faces/face1.jpg")}

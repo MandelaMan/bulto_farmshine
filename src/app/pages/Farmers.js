@@ -78,7 +78,7 @@ const Farmers = () => {
       <div className="row page-title-header">
         <div className="col-12">
           <div className="page-header">
-            <h4 className="page-title">Agents</h4>
+            <h4 className="page-title">Farmers</h4>
             <div className="quick-link-wrapper w-10 d-md-flex flex-md-wrap">
               <ul className="quick-links ml-auto">
                 <li>
@@ -105,9 +105,8 @@ const Farmers = () => {
         <div className="col-lg-12 grid-margin stretch-card">
           <div className="card">
             <div className="card-body">
-              <h4 className="card-title">Agent List</h4>
               <div className="table-responsive">
-                <table className="table table-striped">
+                <table className="table">
                   <thead>
                     {table.getHeaderGroups().map((headerGroup) => (
                       <tr key={headerGroup.id}>
@@ -145,7 +144,11 @@ const Farmers = () => {
                   </thead>
                   <tbody>
                     {table.getRowModel().rows.map((row) => (
-                      <tr key={row.id}>
+                      <tr
+                        key={row.id}
+                        onClick={() => window.location.assign("/farmer/123")}
+                        style={{ cursor: "pointer" }}
+                      >
                         <td className="py-1">
                           <img
                             src={require("../../assets/images/faces/face1.jpg")}

@@ -9,7 +9,7 @@ import {
 import { purchases } from "../mock_data";
 import { BiSolidUpArrow, BiSolidDownArrow } from "react-icons/bi";
 
-const Reports = () => {
+const Stocks = () => {
   const data = useMemo(() => purchases, []);
 
   const [sorting, setSorting] = useState([]);
@@ -197,4 +197,4 @@ const Reports = () => {
   );
 };
 
-export default Reports;
+export default Stocks;

@@ -2,6 +2,10 @@ import React, { Component, Suspense, lazy } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 import Spinner from "../app/shared/Spinner";
+import Agent from "./pages/subpages/Agent";
+import Contract from "./pages/subpages/Contract";
+import Farmer from "./pages/subpages/Farmer";
+import Report from "./pages/subpages/Report";
 // const Dashboard = lazy(() => import("./dashboard/Dashboard"));
 
 const Buttons = lazy(() => import("./basic-ui/Buttons"));
@@ -27,7 +31,7 @@ const Contracts = lazy(() => import("./pages/Contracts"));
 const Farmers = lazy(() => import("./pages/Farmers"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const Reports = lazy(() => import("./pages/Reports"));
-const Stock = lazy(() => import("./pages/Stock"));
+const Stocks = lazy(() => import("./pages/Stocks"));
 const LandDistribution = lazy(() => import("./pages/LandDistribution"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const FarmerSummary = lazy(() => import("./pages/FarmerSummary"));
@@ -42,12 +46,21 @@ class AppRoutes extends Component {
           <Route exact path="/farmer-summary" component={FarmerSummary} />
 
           <Route exact path="/accounting" component={Accounting} />
+
           <Route exact path="/agents" component={Agents} />
+          <Route exact path="/agent/:id" component={Agent} />
+
           <Route exact path="/contracts" component={Contracts} />
+          <Route exact path="/contract/:id" component={Contract} />
+
           <Route exact path="/farmers" component={Farmers} />
-          <Route exact path="/gallery" component={Gallery} />
+          <Route exact path="/farmer/:id" component={Farmer} />
+
           <Route exact path="/reports" component={Reports} />
-          <Route exact path="/stock" component={Stock} />
+          <Route exact path="/report/:category/:id" component={Report} />
+
+          <Route exact path="/gallery" component={Gallery} />
+          <Route exact path="/stock" component={Stocks} />
           <Route exact path="/land-distribution" component={LandDistribution} />
 
           <Route path="/basic-ui/buttons" component={Buttons} />
