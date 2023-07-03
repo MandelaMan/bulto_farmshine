@@ -2,10 +2,7 @@ import React, { Component, Suspense, lazy } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 import Spinner from "../app/shared/Spinner";
-import Agent from "./pages/subpages/Agent";
-import Contract from "./pages/subpages/Contract";
-import Farmer from "./pages/subpages/Farmer";
-import Report from "./pages/subpages/Report";
+
 // const Dashboard = lazy(() => import("./dashboard/Dashboard"));
 
 const Buttons = lazy(() => import("./basic-ui/Buttons"));
@@ -35,6 +32,11 @@ const Stocks = lazy(() => import("./pages/Stocks"));
 const LandDistribution = lazy(() => import("./pages/LandDistribution"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const FarmerSummary = lazy(() => import("./pages/FarmerSummary"));
+
+const Agent = lazy(() => import("./pages/subpages/Agent"));
+const Contract = lazy(() => import("./pages/subpages/Contract"));
+const Farmer = lazy(() => import("./pages/subpages/Farmer"));
+const Report = lazy(() => import("./pages/subpages/Report"));
 
 class AppRoutes extends Component {
   render() {

@@ -102,7 +102,7 @@ const Agents = () => {
           <div className="card">
             <div className="card-body">
               <div className="table-responsive">
-                <table className="table table-striped">
+                <table className="table">
                   <thead>
                     {table.getHeaderGroups().map((headerGroup) => (
                       <tr key={headerGroup.id}>
@@ -142,7 +142,8 @@ const Agents = () => {
                     {table.getRowModel().rows.map((row) => (
                       <tr
                         key={row.id}
-                        onClick={() => console.log("redirect to page")}
+                        onClick={() => window.location.assign("/agent/123")}
+                        style={{ cursor: "pointer" }}
                       >
                         <td className="py-1">
                           <img

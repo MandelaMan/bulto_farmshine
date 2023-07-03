@@ -16,12 +16,6 @@ const Farmer = () => {
       <div className="row page-title-header">
         <div className="col-12">
           <div className="page-header">
-            {/* <h4
-              className="page-title"
-              style={{ color: "rgba(222,226,230 , 0)" }}
-            >
-              H
-            </h4> */}
             <Link to="/farmers">
               <AiFillFastBackward size={20} />
               &nbsp;Back to Farmer details
@@ -50,21 +44,17 @@ const Farmer = () => {
               <div className="card">
                 <div className="card-body">
                   <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                       <img
                         src={require("../../../assets/images/farmer-default.jpg")}
                         alt="user icon"
                       />
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-9">
                       <ul style={{ listStyle: "none" }}>
                         <li>
                           <span className="card-title">Name</span>
                           &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;Jackson Mwatela
-                        </li>
-                        <li>
-                          <span className="card-title">County</span>
-                          &nbsp;:&nbsp;&nbsp;Kisii
                         </li>
                         <li>
                           <span className="card-title">Gender</span>
@@ -73,6 +63,11 @@ const Farmer = () => {
                         <li>
                           <span className="card-title">Mobile</span>
                           &nbsp;&nbsp;:&nbsp;&nbsp;+254 701 567455
+                        </li>
+
+                        <li>
+                          <span className="card-title">County</span>
+                          &nbsp;:&nbsp;&nbsp;Kisii
                         </li>
                       </ul>
                     </div>
