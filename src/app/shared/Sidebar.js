@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { Collapse } from "react-bootstrap";
-import { Dropdown } from "react-bootstrap";
+// import { Dropdown } from "react-bootstrap";
 import { Trans } from "react-i18next";
 import { TfiDashboard } from "react-icons/tfi";
 import { LiaFileContractSolid } from "react-icons/lia";
@@ -158,7 +158,7 @@ class Sidebar extends Component {
               <i className="mdi mdi-television menu-icon"></i>
               <span className="menu-title">
                 <Trans>
-                  <GiFarmer size={22} style={{ marginTop: "-5%" }} />
+                  <GiFarmer size={23} style={{ marginTop: "-5%" }} />
                   &nbsp;&nbsp;Farmers
                 </Trans>
               </span>
@@ -246,7 +246,7 @@ class Sidebar extends Component {
               onClick={() => this.toggleMenuState("reportsMenuOpen")}
               data-toggle="collapse"
             >
-              <i className="mdi mdi-crosshairs-gps menu-icon"></i>
+              <i className="mdi mdi-report-bar menu-icon"></i>
               <span className="menu-title">
                 <Trans>
                   <HiOutlineDocumentReport

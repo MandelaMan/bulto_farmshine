@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import { Line, Bar } from "react-chartjs-2";
 
 import { Dropdown } from "react-bootstrap";
+import { BiSolidUpArrow, BiSolidDownArrow } from "react-icons/bi";
+
 // import GaugeChart from "react-gauge-chart";
 // import { VectorMap } from "react-jvectormap";
 
@@ -1153,6 +1155,7 @@ export class Dashboard extends Component {
                 </button>
                 <button type="button" className="btn btn-secondary">
                   03/02/2019 - 20/08/2019
+                  {/* <input type="date" name="date" /> */}
                 </button>
                 <button type="button" className="btn btn-secondary">
                   <i className="mdi mdi-chevron-right"></i>
@@ -1215,7 +1218,13 @@ export class Dashboard extends Component {
                         <h5 className="mb-0 font-weight-medium text-primary">
                           Total Beneficiaries (Farmers)
                         </h5>
-                        {/* <p className="mb-0 text-muted">+14.00(+0.50%)</p> */}
+                        <p className="mb-0" style={{ color: "#F95F53" }}>
+                          <BiSolidUpArrow
+                            size={12}
+                            style={{ marginTop: "-1%" }}
+                          />
+                          &nbsp;+0.50%
+                        </p>
                       </div>
                       <div className="wrapper my-auto ml-auto ml-lg-4">
                         <Line
@@ -1223,7 +1232,7 @@ export class Dashboard extends Component {
                           data={this.state.visitChartData}
                           options={this.state.areaOptions}
                           datasetKeyProvider={this.state.datasetKeyProvider}
-                          height={50}
+                          height={85}
                           width={100}
                           id="visitChart"
                         />
@@ -1237,7 +1246,13 @@ export class Dashboard extends Component {
                         <h5 className="mb-0 font-weight-medium text-primary">
                           Culivated Land by (Acreage)
                         </h5>
-                        {/* <p className="mb-0 text-muted">+138.97(+0.54%)</p> */}
+                        <p className="mb-0" style={{ color: "#F95F53" }}>
+                          <BiSolidDownArrow
+                            size={12}
+                            style={{ marginTop: "-1%" }}
+                          />
+                          &nbsp;+0.50%
+                        </p>
                       </div>
                       <div className="wrapper my-auto ml-auto ml-lg-4">
                         <Line
@@ -1245,7 +1260,7 @@ export class Dashboard extends Component {
                           data={this.state.impressionChartData}
                           options={this.state.areaOptions}
                           datasetKeyProvider={this.state.datasetKeyProvider}
-                          height={50}
+                          height={85}
                           width={100}
                           id="imoressionChart"
                         />
@@ -1257,9 +1272,15 @@ export class Dashboard extends Component {
                       <div className="wrapper">
                         <h3 className="mb-0 font-weight-semibold">7,688</h3>
                         <h5 className="mb-0 font-weight-medium text-primary">
-                          Estimated Soya Harvest (T)
+                          Total Beneficiaries Trainings
                         </h5>
-                        {/* <p className="mb-0 text-muted">+57.62(+0.76%)</p> */}
+                        <p className="mb-0" style={{ color: "#58d8a3" }}>
+                          <BiSolidUpArrow
+                            size={12}
+                            style={{ marginTop: "-1%" }}
+                          />
+                          &nbsp;+0.50%
+                        </p>
                       </div>
                       <div className="wrapper my-auto ml-auto ml-lg-4">
                         <Line
@@ -1267,7 +1288,7 @@ export class Dashboard extends Component {
                           data={this.state.conversionChartData}
                           options={this.state.areaOptions}
                           datasetKeyProvider={this.state.datasetKeyProvider}
-                          height={50}
+                          height={85}
                           width={100}
                           id="conversionChart"
                         />
@@ -1281,7 +1302,13 @@ export class Dashboard extends Component {
                         <h5 className="mb-0 font-weight-medium text-primary">
                           Soya Inventory Volume (T)
                         </h5>
-                        {/* <p className="mb-0 text-muted">+138.97(+0.54%)</p> */}
+                        <p className="mb-0" style={{ color: "#58d8a3" }}>
+                          <BiSolidUpArrow
+                            size={12}
+                            style={{ marginTop: "-1%" }}
+                          />
+                          &nbsp;+0.50%
+                        </p>
                       </div>
                       <div className="wrapper my-auto ml-auto ml-lg-4">
                         <Line
@@ -1289,7 +1316,7 @@ export class Dashboard extends Component {
                           data={this.state.downloadChartData}
                           options={this.state.areaOptions}
                           datasetKeyProvider={this.state.datasetKeyProvider}
-                          height={50}
+                          height={85}
                           width={100}
                           id="downloadChart"
                         />
