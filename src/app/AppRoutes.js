@@ -26,7 +26,7 @@ const Accounting = lazy(() => import("./pages/Accounting"));
 const Agents = lazy(() => import("./pages/Agents"));
 const Contracts = lazy(() => import("./pages/Contracts"));
 const Farmers = lazy(() => import("./pages/Farmers"));
-const Gallery = lazy(() => import("./pages/Gallery"));
+const TheGallery = lazy(() => import("./pages/TheGallery"));
 const Reports = lazy(() => import("./pages/Reports"));
 const Stocks = lazy(() => import("./pages/Stocks"));
 const LandDistribution = lazy(() => import("./pages/LandDistribution"));
@@ -61,7 +61,7 @@ class AppRoutes extends Component {
           <Route exact path="/reports" component={Reports} />
           <Route exact path="/report/:category/:id" component={Report} />
 
-          <Route exact path="/gallery" component={Gallery} />
+          <Route exact path="/gallery" component={TheGallery} />
           <Route exact path="/stock" component={Stocks} />
           <Route exact path="/land-distribution" component={LandDistribution} />
 

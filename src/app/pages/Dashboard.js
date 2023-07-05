@@ -1006,30 +1006,21 @@ export class Dashboard extends Component {
     var Datas1 = [0, 25, 20, 40, 70, 52, 49, 90, 70, 94, 110, 135];
 
     const salesStatisticsData = {
-      labels: [
-        "Jan 1",
-        "Jan 7",
-        "Jan 14",
-        "Jan 21",
-        "Jan 28",
-        "Feb 4",
-        "Feb 11",
-        "Feb 18",
-      ],
+      labels: ["Jan", "Feb", "March", "April", "May", "June", "July"],
       datasets: [
         {
-          label: "Revenue",
+          label: "Yield",
           data: Datas,
-          borderColor: "#8862e0",
-          backgroundColor: gradientBar5,
+          borderColor: "#4f2c1d",
+          backgroundColor: "rgba(79, 44, 29, 0.5)",
           borderWidth: 2,
           fill: true,
         },
         {
-          label: "Sales",
+          label: "Quantity",
           data: Datas1,
-          borderColor: "#5ed2a1",
-          backgroundColor: gradientBar6,
+          borderColor: "#1d4f2c",
+          backgroundColor: "rgba(29, 79, 44, 1)",
           borderWidth: 2,
           fill: true,
         },

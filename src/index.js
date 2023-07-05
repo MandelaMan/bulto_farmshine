@@ -5,6 +5,7 @@ import App from "./app/App";
 import "./i18n";
 import * as serviceWorker from "./serviceWorker";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import "leaflet/dist/leaflet.css";
 
 ReactDOM.render(
   <BrowserRouter basename="/">

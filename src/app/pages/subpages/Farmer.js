@@ -2,15 +2,35 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BiSolidUpArrow, BiSolidDownArrow } from "react-icons/bi";
 import { AiFillFastBackward } from "react-icons/ai";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
+import { Carousel } from "react-carousel-minimal";
+import farm1 from "../../../assets/images/soya-beans.jpg";
+import farm2 from "../../../assets/images/soya-beans2.jpg";
+import farm3 from "../../../assets/images/soya-beans3.jpg";
+// import {
+//   CarouselProvider,
+//   Slider,
+//   Slide,
+//   ButtonBack,
+//   ButtonNext,
+// } from "pure-react-carousel";
 
 const Farmer = () => {
+  const data = [
+    {
+      image: farm1,
+      // caption: "San Francisco",
+    },
+  ];
+
+  const captionStyle = {
+    fontSize: "2em",
+    fontWeight: "bold",
+  };
+  const slideNumberStyle = {
+    fontSize: "20px",
+    fontWeight: "bold",
+  };
+
   return (
     <div>
       <div className="row page-title-header">
@@ -157,44 +177,31 @@ const Farmer = () => {
             <div className="card-body">
               <div className="row">
                 <div className="col-md-12">
-                  <CarouselProvider
-                    naturalSlideWidth={100}
-                    naturalSlideHeight={60}
-                    totalSlides={3}
-                  >
-                    <Slider>
-                      <Slide index={0}>
-                        <img
-                          src={require("../../../assets/images/soya-beans.jpg")}
-                          alt="user icon"
-                          width={600}
-                          height={360}
-                        />
-                      </Slide>
-                      <Slide index={1}>
-                        <img
-                          src={require("../../../assets/images/soya-beans2.jpg")}
-                          width={600}
-                          height={360}
-                          alt="user icon"
-                        />
-                      </Slide>
-                      <Slide index={2}>
-                        <img
-                          src={require("../../../assets/images/soya-beans3.jpg")}
-                          width={600}
-                          height={360}
-                          alt="user icon"
-                        />
-                      </Slide>
-                    </Slider>
-                    <ButtonBack className="btn btn-outline-secondary">
-                      Back
-                    </ButtonBack>
-                    <ButtonNext className="btn btn-outline-secondary">
-                      Next
-                    </ButtonNext>
-                  </CarouselProvider>
+                  <Carousel
+                    data={data}
+                    time={1000}
+                    width="850px"
+                    height="300px"
+                    captionStyle={captionStyle}
+                    radius="10px"
+                    slideNumber={true}
+                    slideNumberStyle={slideNumberStyle}
+                    captionPosition="bottom"
+                    automatic={true}
+                    dots={true}
+                    pauseIconColor="white"
+                    pauseIconSize="40px"
+                    slideBackgroundColor="darkgrey"
+                    slideImageFit="cover"
+                    thumbnails={true}
+                    thumbnailWidth="100px"
+                    style={{
+                      textAlign: "center",
+                      maxWidth: "850px",
+                      maxHeight: "400px",
+                      margin: "10px auto",
+                    }}
+                  />
                 </div>
               </div>
             </div>
