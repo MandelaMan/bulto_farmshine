@@ -6,6 +6,7 @@ import "./i18n";
 import * as serviceWorker from "./serviceWorker";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "leaflet/dist/leaflet.css";
+import "react-datepicker/dist/react-datepicker.css";
 
 ReactDOM.render(
   <BrowserRouter basename="/">

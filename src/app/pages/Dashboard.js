@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import { Line, Doughnut, Bar, Radar } from 'react-chartjs-2';
 import { Line, Bar } from "react-chartjs-2";
-
+import DatePicker from "react-datepicker";
 import { Dropdown } from "react-bootstrap";
 import { BiSolidUpArrow, BiSolidDownArrow } from "react-icons/bi";
 
@@ -1100,15 +1100,6 @@ export class Dashboard extends Component {
   render() {
     return (
       <div>
-        {/* <div className="row proBanner">
-          <div className="col-12">
-            <span className="d-flex align-items-center purchase-popup">
-              <p>Get tons of UI components, Plugins, multiple layouts, 20+ sample pages, and more!</p>
-              <a href="https://www.bootstrapdash.com/product/star-admin-pro-react/" rel="noopener noreferrer" target="_blank" className="btn purchase-button ml-auto">Check Pro Version</a>
-              <i className="mdi mdi-close bannerClose" onClick={this.toggleProBanner}></i>
-            </span>
-          </div>
-        </div> */}
         <div className="row page-title-header">
           <div className="col-12">
             <div className="page-header">
@@ -1145,7 +1136,8 @@ export class Dashboard extends Component {
                   <i className="mdi mdi-chevron-left"></i>
                 </button>
                 <button type="button" className="btn btn-secondary">
-                  03/02/2019 - 20/08/2019
+                  <input type="date" value="03/02/2019 - 20/08/2019" />
+                  {/* 03/02/2019 - 20/08/2019 */}
                   {/* <input type="date" name="date" /> */}
                 </button>
                 <button type="button" className="btn btn-secondary">
