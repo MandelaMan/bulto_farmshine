@@ -20,6 +20,14 @@ const Farmer = () => {
       image: farm1,
       // caption: "San Francisco",
     },
+    {
+      image: farm2,
+      // caption: "San Francisco",
+    },
+    {
+      image: farm3,
+      // caption: "San Francisco",
+    },
   ];
 
   const captionStyle = {
